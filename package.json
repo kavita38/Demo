@@ -9,8 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "preinstall": "npm install -g @angular/cli",
-    "postinstall": "tsc -p server && ng build --aot --prod",
+   
+    "postinstall": "ng build --aot --prod",
     "heroku-postbuild": "cd demo-deploy && npm install"
   },
   "private": true,
