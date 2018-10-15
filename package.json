@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
    
-    "postinstall": "ng build --aot --prod",
-    "heroku-postbuild": "cd demo-deploy && npm install"
+    "postinstall": "ng build --aot --prod"
+   
   },
   "private": true,
   "dependencies": {
