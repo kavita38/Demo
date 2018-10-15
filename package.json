@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "preinstall": "npm install -g @angular/cli",
-    "postinstall":"tsc -p server && ng build --aot --prod"
+    "postinstall": "tsc -p server && ng build --aot --prod",
+    "heroku-postbuild": "cd demo-deploy && npm install"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "dotenv": "^6.1.0",
     "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",

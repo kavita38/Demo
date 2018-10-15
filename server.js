@@ -14,7 +14,9 @@ res.sendFile(path.join(__dirname+'/dist/demo-deploy/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080,function(){
+    console.log("listening on *:8080");
+});
 const express = require('express');
 const app = express();
 // If an incoming request uses
